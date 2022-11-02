@@ -6,8 +6,9 @@ for (let i = 0; i<2; i++) {
     if (i = 0){
     const product1 = document.createElement("div");
    product1.classList.add("product");
-   productContainer.appendChild(product1);
    product1.innerHTML = productList[0];
+   productContainer.appendChild(product1);
+   
    }else if (i > 0 && i < 2){
         const product2 = document.createElement("div");
         product2.classList.add("product");
