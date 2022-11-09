@@ -30,7 +30,7 @@ const productArray = [{
         productContainer.appendChild(product);
         product.classList.add('product');
         const productPrice = document.createElement('div');
-        productPrice.innerHTML = obj.price;
+        productPrice.innerHTML = "price is: " + obj.price;
         product.appendChild(productPrice) 
         const productDescreption = document.createElement('div');
         productDescreption.innerHTML = obj.descreption;
