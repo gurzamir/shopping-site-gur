@@ -1,9 +1,5 @@
 console.log('hello')
 const productContainer=document.getElementById("products-containers");
-/*const product1 = document.createElement('div')
-product1.innerHTML = 'green tea'
-product1.classList.add('product');
-productContainer.appendChild(product1);*/
 const productArray = []
 productArray.push(
     {
@@ -14,8 +10,7 @@ productArray.push(
         descreption : 'healthy and refreshing',
         image : 'images/green tea.jpg',
    },
-       
-  {
+   {
         name : 'chai',
         price : 12,
         id : 1,
@@ -56,12 +51,9 @@ productArray.push(
     descreption : 'boost of energy',
     image : 'images/coffee.jpeg',
    }
-    
-   
 )
 
     
-    // 'coffee', 'icecream', 'soup', 'chocko', 'coconut', 'lior-fav'];
     function test1(obj){
         console.log(1)
         const product = document.createElement('div');
@@ -85,11 +77,13 @@ productArray.push(
         product.appendChild(productDescreption);
         product.appendChild(productAmount);
 
-        // productimg = obj.image.src;
     }
 
 for (let i = 0; i < productArray.length; i++ ){
      test1(productArray[i]);
 
 }
+
+
+
 
