@@ -1,5 +1,5 @@
 console.log('hello')
-const productContainer=document.getElementById("products-containers");
+const productsContainer=document.getElementById("products-containers");
 const productArray = []
 productArray.push(
     {
@@ -54,34 +54,16 @@ productArray.push(
 )
 
     
-    function test1(obj){
-        console.log(1)
-        const product = document.createElement('div');
-        const productPrice = document.createElement('div');
-        const productDescreption = document.createElement('div');
-        const productAmount = document.createElement('div');
-        const productimg = document.createElement('img');
-        
-        product.classList.add('product');
-        productimg.classList.add('images')
+  
 
-        product.innerHTML = obj.name;
-        productPrice.innerHTML = "price of " + obj.name + " is: " + obj.price;
-        productDescreption.innerHTML ='about ' + obj.name +': ' + obj.descreption;
-        productAmount.innerHTML ='anount of ' + obj.name + 'is: ' + obj.amount;
-        productimg.src = obj.image;
-        
-        product.appendChild(productimg);
-        productContainer.appendChild(product);
-        product.appendChild(productPrice);
-        product.appendChild(productDescreption);
-        product.appendChild(productAmount);
-
-    }
+let productContainer;
 
 for (let i = 0; i < productArray.length; i++ ){
-     test1(productArray[i]);
-
+    productContainer = createProduct()
+    createProductName(productArray[i])
+    createProductPrice(productArray[i])
+    createProductDescription(productArray[i])
+    createProducimg(productArray[i])
 }
 
 
